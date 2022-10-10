@@ -1,0 +1,11 @@
+package lista1.logica14;
+
+public class Conta {
+	
+	double saldo = 0;
+
+	public double getSaldo() {
+		return saldo * 1 / 100;
+	}
+	
+}

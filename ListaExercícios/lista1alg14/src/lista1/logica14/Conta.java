@@ -1,0 +1,18 @@
+package lista1.logica14;
+
+public class Conta {
+	
+	private double saldo;
+	
+	public Conta() {
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	public void Depositar(double valor) {
+		this.saldo += valor * 0.99;
+	}
+
+}

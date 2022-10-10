@@ -1,0 +1,21 @@
+package lista1.logica9;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String n1 = JOptionPane.showInputDialog(null, "Primeiro número: ");
+		String n2 = JOptionPane.showInputDialog(null, "Segundo número: ");
+		
+		String soma = n1 + n2;
+		
+		JOptionPane.showMessageDialog(null, soma);
+
+	}
+
+}

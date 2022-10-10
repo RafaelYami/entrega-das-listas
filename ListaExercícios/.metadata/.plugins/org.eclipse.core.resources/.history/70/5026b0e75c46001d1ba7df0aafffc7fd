@@ -1,0 +1,25 @@
+package lista1.logica14;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double saldo = 0.0;
+		double addSaldo;
+		
+		System.out.println("Seu saldo é: " + saldo);
+		
+		
+		
+		System.out.println("Digite o valor que deseja adicionar ao saldo: ");
+		addSaldo = sc.nextDouble();
+		
+		System.out.println("Saldo atualizado: " + addSaldo);
+		
+		sc.close();
+	}
+
+}

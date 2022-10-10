@@ -1,0 +1,13 @@
+package lista1.logica8;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		JOptionPane.showInputDialog("Nome:");
+
+	}
+
+}

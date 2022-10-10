@@ -1,0 +1,25 @@
+package lista1.logica15;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double salarioMinimo = 1212;
+		double quilowatt;
+		
+		System.out.println("Digite quantos quilowatts foram gastos na residência: ");
+		quilowatt = sc.nextDouble();
+		
+		double valorQuilowatt = salarioMinimo / 7 / 100;
+		
+		double valorASerPago = valorQuilowatt * quilowatt;
+		
+		System.out.printf("Valor em reais de cada quilowatt: R$%.2f", valorQuilowatt);
+		
+		sc.close();
+	}
+
+}

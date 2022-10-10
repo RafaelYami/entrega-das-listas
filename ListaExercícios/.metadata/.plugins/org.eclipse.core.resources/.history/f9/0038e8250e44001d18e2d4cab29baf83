@@ -1,0 +1,18 @@
+package lista1.logica10;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		String n1 = JOptionPane.showInputDialog(null, "Primeiro número: ");
+		String n2 = JOptionPane.showInputDialog(null, "Segundo número: ");
+		
+		int produto = n1 * n2;
+		
+		JOptionPane.showMessageDialog(null, produto);
+		
+	}
+
+}

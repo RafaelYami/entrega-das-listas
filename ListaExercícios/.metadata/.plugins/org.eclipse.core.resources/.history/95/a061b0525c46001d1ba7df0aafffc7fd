@@ -1,0 +1,32 @@
+package lista1.logica14;
+
+public class Conta {
+	
+	private double saldo;
+	
+	public Conta() {
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	public boolean Sacar(double valor) throws ContaException {
+		if(valor > this.saldo) {
+			return false;
+		}else {
+			throw new ContaException("Saldo indisponível!");
+			//return true;
+		}	
+	}
+	
+	public boolean Transferir(double valor, Conta destino) throws ContaException {
+		if(valor <= saldo) {
+			this.saldo -= valor;
+			destino.saldo += valor;
+			return true;
+		}
+		throw new ContaException("Saldo indisponível!");
+		//return false;
+	
+}

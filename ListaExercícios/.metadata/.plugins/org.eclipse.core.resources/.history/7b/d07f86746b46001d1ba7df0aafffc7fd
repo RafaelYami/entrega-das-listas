@@ -1,0 +1,24 @@
+package lista1.logica16;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String nome;
+		
+		System.out.println("Digite um nome: ");
+		nome = sc.nextLine();
+		
+		System.out.println("Nome inteiro: " + nome);
+		
+		System.out.println("Prmeiro caractere: " + nome.charAt(0));
+		
+		System.out.println("Último caractere: " + nome.charAt(nome.length()));
+		
+		sc.close();
+	}
+
+}

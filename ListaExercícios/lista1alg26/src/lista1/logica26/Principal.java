@@ -1,0 +1,29 @@
+package lista1.logica26;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double valor;
+		int atraso;
+		double taxa = 0.03;
+		
+		System.out.println("---Prestação em atraso---");
+		
+		System.out.print("\nDigite o valor da prestação: ");
+		valor = sc.nextDouble();
+		
+		System.out.print("Digite o tempo de atraso: ");
+		atraso = sc.nextInt();
+		
+		double pagTaxa = valor + (valor*(taxa/100)*atraso);
+		
+		System.out.printf("\nValor com taxa de atraso: R$%.2f", pagTaxa);
+		
+		sc.close();
+	}
+
+}

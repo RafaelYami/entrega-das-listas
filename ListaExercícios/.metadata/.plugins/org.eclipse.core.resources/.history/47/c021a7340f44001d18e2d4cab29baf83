@@ -1,0 +1,30 @@
+package lista1.logica11;
+
+import java.util.InputMismatchException;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+		
+		try {
+		
+		double n1;
+		
+		System.out.print("Digite um número real: ");
+		n1 = sc.nextInt();
+		
+		System.out.println("Você digitou: ");
+		
+		}catch(InputMismatchException exception) {
+			System.out.println("Este não é um número INTEIRO!");
+		}
+		
+		sc.close();
+
+
+	}
+
+}
